@@ -1,0 +1,408 @@
+body {
+  background-image: url(../images/fond-rainbow-degrade.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+}
+
+body .header-accueil {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Merienda One', cursive;
+  background-color: rgba(248, 244, 223, 0.8);
+  /* opacity: 0.8; */
+}
+
+body .header-accueil .logo {
+  text-decoration: none !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .header-accueil .logo h1 {
+  font-size: 30px;
+  margin: 0px;
+  color: #a8802a;
+}
+
+body .header-accueil .logo .fa-shopping-cart {
+  padding: 20px;
+  font-size: 40px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#b576f0), to(#e473f3));
+  background: linear-gradient(to bottom right, #b576f0, #e473f3);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body .header-accueil .buttons {
+  padding: 20px;
+}
+
+body .header-accueil .buttons .btn {
+  border: none;
+  width: 100px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: 'Merienda One', cursive;
+  font-size: 17px;
+  font-weight: bold;
+  color: #a8802a;
+}
+
+body .header-accueil .buttons .btn:hover {
+  cursor: pointer;
+  color: #76c9f0;
+}
+
+body .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 250px;
+  /* .pdt {
+            margin: 5px;
+        } */
+}
+
+body .main .intro {
+  padding: 50px 0px;
+  background-color: rgba(248, 244, 223, 0.5);
+  margin: 50px;
+  text-align: center;
+  font-family: 'Merienda One', cursive;
+  line-height: 50px;
+  color: #a8802a;
+  -webkit-box-shadow: 5px 5px 5px #a8802a;
+          box-shadow: 5px 5px 5px #a8802a;
+  border-radius: 10px;
+}
+
+body .main .intro .second-title {
+  font-size: 50px;
+}
+
+body .main .intro h2 {
+  margin: 0px;
+  margin-top: 20px;
+}
+
+body .main .all-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main .all-products .product {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 340px;
+  /* height: 450px; */
+  /* background-color: rgb(241, 209, 104); */
+  background-color: rgba(248, 244, 223, 0.5);
+  margin: 50px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px #a8802a;
+          box-shadow: 5px 5px 5px #a8802a;
+  /* border: 2px solid rgb(168, 128, 42); */
+}
+
+body .main .all-products .product img {
+  width: 300px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 220px;
+  /* border: 2px solid rgb(168, 128, 42); */
+}
+
+body .main .all-products .product img :hover {
+  /* cursor: url(https://fontawesome.com/v5.15/icons/paw?style=solid), default; */
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .main .all-products .product .product-details {
+  color: #a8802a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: beige;
+  width: 294px;
+  margin: 20px;
+  padding: 10px;
+  /* font-style: oblique; */
+  line-height: 30px;
+  /* border: 2px solid rgb(168, 128, 42); */
+  border-radius: 10px 0px 10px 0px;
+  border: #a8802a;
+}
+
+body .main .all-products .product .product-details .product-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .main .all-products .product .product-details .product-price {
+  font-weight: bold;
+}
+
+body .main .all-products .product .product-details .fa-paw {
+  font-size: 30px;
+  color: #f1d168;
+}
+
+body .main .all-products .product .product-details .fa-paw:hover {
+  cursor: pointer;
+  color: #a8802a;
+}
+
+body .main button {
+  font-size: large;
+  font-weight: bold;
+  height: 30px;
+  color: #a8802a;
+  background-color: #f1d168;
+  border: none;
+  border-radius: 5px;
+}
+
+body .main button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border: 3px solid #a8802a;
+}
+
+body footer {
+  background-color: rgba(241, 235, 201, 0.5);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 50px;
+  padding-top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #a8802a;
+}
+
+body .bloc-footer {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 50px;
+}
+
+body h2, body h3 {
+  font-family: 'Merienda One', cursive;
+  color: #a8802a;
+}
+
+.body-product {
+  background-image: url(../images/fond-rainbow-degrade-page2.png);
+  color: #a8802a;
+}
+
+.body-product .header-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Merienda One', cursive;
+  background-color: rgba(248, 244, 223, 0.8);
+  /* opacity: 0.8; */
+}
+
+.body-product .header-product .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body-product .header-product .logo h1 {
+  font-size: 30px;
+  margin: 0px;
+  color: #a8802a;
+}
+
+.body-product .header-product .logo .fa-shopping-cart {
+  padding: 20px;
+  font-size: 40px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#eca3c8), to(#d86da3));
+  background: linear-gradient(to bottom right, #eca3c8, #d86da3);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.body-product .header-product .buttons {
+  padding: 20px;
+}
+
+.body-product .header-product .buttons .btn {
+  border: none;
+  width: 100px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: 'Merienda One', cursive;
+  font-size: 17px;
+  font-weight: bold;
+  color: #a8802a;
+}
+
+.body-product .header-product .buttons .btn:hover {
+  cursor: pointer;
+  color: #76c9f0;
+}
+
+.body-product .intro-product {
+  height: 120px;
+  padding: 20px !important;
+}
+
+.body-product .intro-product h2 {
+  margin-top: 0px;
+}
+
+.body-product .selected-product {
+  padding: 50px;
+  margin: 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(241, 235, 201, 0.5);
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px #a8802a;
+          box-shadow: 5px 5px 5px #a8802a;
+}
+
+.body-product .selected-product .img-product-details {
+  height: 300px;
+  border-radius: 10px;
+}
+
+.body-product .selected-product .product-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+  width: 320px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  height: 260px;
+  background-color: beige;
+  border-radius: 10px;
+}
+
+.body-basket {
+  background-image: url(../images/fond-rainbow-degrade-page3.png);
+}
+/*# sourceMappingURL=styles.css.map */

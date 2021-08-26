@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	
+	<title>Détails du produit</title>
+
+	<meta charset="utf-8">
+	<meta name="description" content=""> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet"> 
+
+    <link type="text/css" rel="stylesheet" href="../SCSS/styles.css">
+    <link href="https://www.dafont.com/hairambe.font" rel="stylesheet">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+<!--LES LIENS-->
+</head>
+<body class="body-product">
+    <!-- HEADER -->
+	<header class="header header-product">
+        <a href="../index.html"><div class="logo"><i class="fas fa-shopping-cart"></i><h1>Orinours</h1></div></a>
+
+        <div class="buttons">
+            <button onclick="idrecup()" class="btn">Accueil</button>
+            <button class="btn">Favoris</button>
+            <a href="../HTML/page-panier.html"><button class="btn">Panier</button></a>
+        
+        </div>
+        <!-- <img class="logo" src="images/Logo-Orinoco.png" alt="Le logo de notre enseigne Orinoco" /> -->
+    </header>
+
+
+
+    <!--MAIN-->
+    <main class="main main-product">
+        <div class="intro intro-product">
+            <h2>Un large choix de peluches personnalisables</h2>
+            <h3>Découvrez vite notre palette de couleurs!</h3>
+        </div>
+        <div class="selected-product">
+            <!-- // ${teddies[i].imageUrl} -->
+            <img class="img-product-details" src="../../images/teddy_1.jpg" alt="Peluche selectionnée">
+            <div class="product-details">               
+                <div class="product-name">Craquez pour ${teddies[i].name}</div>
+                <div class="product-description">${teddies[i].description}</div>
+                <div class="Menu-deroulant">Selectionnez une couleur
+                    <select class="color-select">
+                        <option>Vert</option>
+                        <option>Bleu</option> 
+                        <option>Rouge</option>>
+                    </select>
+                </div>
+                <div class="product-price">Prix à integrer </div>
+                <button class="">Ajouter au panier</button>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <footer class="footer">
+            <div class="bloc-footer">
+                <h3>Contactez-nous</h3>
+                <label for="customerName" class="customerName">Votre nom</label>
+                <input class="inputCustomerName" type="text">
+                <label for="custumerEmail" class="customerEmail">Votre email</label>
+                <input class="inputCustomerEmail" type="text">
+                <label for="customerMessage" class="customerMessage">Votre message</label>
+                <textarea name="customerMessage" id="customerMessage" cols="30" rows="3"></textarea>
+            </div>
+            <div class="bloc-footer">
+                <div class="logo"><i class="fas fa-shopping-cart"></i><h3>Orinours</h3></div>
+            </div>
+        </footer>
+    
+        <script src="JS/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+body {
+    // width: auto;
+    background-image: url(../images/fond-rainbow-degrade.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+
+    .header-accueil {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Merienda One', cursive;
+        background-color: rgba(248, 244, 223, 0.8);
+        /* opacity: 0.8; */
+        .logo {
+            text-decoration: none!important;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+             h1 {
+                font-size: 30px;
+                margin: 0px;
+                color: rgb(168, 128, 42);
+                }
+            .fa-shopping-cart {
+                padding: 20px;
+                font-size: 40px;
+                background: linear-gradient(to bottom right,rgb(181, 118, 240) ,rgb(228, 115, 243));
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .buttons {
+            padding: 20px;
+            .btn {
+            border: none;
+            width: 100px;
+            padding: 10px;
+            background-color: transparent;
+            border-radius: 5px;
+            font-family: 'Merienda One', cursive;
+            font-size: 17px;
+            font-weight: bold;
+            color: rgb(168, 128, 42);
+            }
+            .btn:hover{
+                    cursor: pointer;
+                    color: rgb(118, 201, 240);
+
+
+            }
+        }
+
+}
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 250px;
+        .intro {
+            padding: 50px 0px;
+            background-color: rgba(248, 244, 223, 0.5);
+            margin: 50px;
+            text-align: center;
+            font-family: 'Merienda One', cursive;
+            line-height: 50px;
+            color: rgb(168, 128, 42);
+            box-shadow: 5px 5px 5px rgb(168, 128, 42);
+            border-radius: 10px;
+            .second-title {
+            font-size: 50px;
+            }
+            h2 {
+                margin: 0px;
+                margin-top: 20px;
+            }
+        }
+        .all-products {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            .product {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding-top: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                width: 340px;
+                /* height: 450px; */
+                /* background-color: rgb(241, 209, 104); */
+                background-color: rgba(248, 244, 223, 0.5);
+                margin: 50px;
+                border-radius: 10px;
+                box-shadow: 5px 5px 5px rgb(168, 128, 42);
+                /* border: 2px solid rgb(168, 128, 42); */
+
+                img {
+                    width: 300px;
+                    border-radius: 10px;
+                    object-fit: cover;
+                    height: 220px;
+                    /* border: 2px solid rgb(168, 128, 42); */
+                    :hover {
+                    /* cursor: url(https://fontawesome.com/v5.15/icons/paw?style=solid), default; */
+                    transform: scale(1.05);
+                }
+            }
+    
+            .product-details {
+                color: rgb(168, 128, 42);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: beige;
+                width: 294px;
+                margin: 20px;
+                padding: 10px;
+                /* font-style: oblique; */
+                line-height: 30px;
+                /* border: 2px solid rgb(168, 128, 42); */
+                border-radius: 10px 0px 10px 0px;
+                border: rgb(168, 128, 42);
+                .product-title {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                .product-price {
+                    font-weight: bold;
+                }
+                .fa-paw {
+                    font-size: 30px;
+                    color: rgb(241, 209, 104);;
+                }
+                .fa-paw:hover {
+                    cursor: pointer;
+                    color: rgb(168, 128, 42);
+                }
+            }
+        }
+    }
+
+
+        /* .pdt {
+            margin: 5px;
+        } */
+
+    
+        button {
+            font-size: large;
+            font-weight: bold;
+            height: 30px;
+            color: rgb(168, 128, 42);
+            background-color: rgb(241, 209, 104);
+            border: none;
+            border-radius: 5px;
+            }
+        button:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            border: 3px solid  rgb(168, 128, 42);
+    }
+            
+    }
+
+    footer {
+        background-color: rgba(241, 235, 201, 0.5);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 50px;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: rgb(168, 128, 42);
+
+    }
+    .bloc-footer {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 50px;
+    }
+    h2,h3 {
+        font-family: 'Merienda One', cursive;
+        color: rgb(168, 128, 42);
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// PAGE PRODUIT
+
+.body-product {
+    background-image: url(../images/fond-rainbow-degrade-page2.png);
+
+    color: rgb(168, 128, 42);
+    .header-product {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Merienda One', cursive;
+        background-color: rgba(248, 244, 223, 0.8);
+        /* opacity: 0.8; */
+        .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+             h1 {
+                font-size: 30px;
+                margin: 0px;
+                color: rgb(168, 128, 42);
+                }
+            .fa-shopping-cart {
+                padding: 20px;
+                font-size: 40px;
+                background: linear-gradient(to bottom right,rgb(236, 163, 200) ,rgb(216, 109, 163));
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .buttons {
+            padding: 20px;
+            .btn {
+            border: none;
+            width: 100px;
+            padding: 10px;
+            background-color: transparent;
+            border-radius: 5px;
+            font-family: 'Merienda One', cursive;
+            font-size: 17px;
+            font-weight: bold;
+            color: rgb(168, 128, 42);
+            }
+            .btn:hover{
+                cursor: pointer;
+                color: rgb(118, 201, 240);
+        }
+        }
+    }
+    .intro-product {
+        height: 120px;
+        padding: 20px!important;
+        h2 {
+            margin-top: 0px;
+        }
+    }
+
+    .selected-product {
+        padding: 50px;
+        margin: 50px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(241, 235, 201, 0.5);
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgb(168, 128, 42);
+        .img-product-details {
+            height: 300px;
+            border-radius: 10px;
+        }
+        .product-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 20px;
+            width: 320px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            height: 260px;
+            background-color: beige;
+            border-radius: 10px;
+        }
+
+    }
+
+}
+
+
+
+
+
+// Page Panier
+
+.body-basket {
+    background-image: url(../images/fond-rainbow-degrade-page3.png);
+}

@@ -5,7 +5,7 @@ body {
   margin: 0px;
 }
 
-body .header-accueil {
+body header {
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,7 +25,7 @@ body .header-accueil {
   /* opacity: 0.8; */
 }
 
-body .header-accueil .logo {
+body header .logo {
   text-decoration: none !important;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,13 +39,13 @@ body .header-accueil .logo {
           align-items: center;
 }
 
-body .header-accueil .logo h1 {
+body header .logo h1 {
   font-size: 30px;
   margin: 0px;
   color: #a8802a;
 }
 
-body .header-accueil .logo .fa-shopping-cart {
+body header .logo .fa-shopping-cart {
   padding: 20px;
   font-size: 40px;
   background: -webkit-gradient(linear, left top, right bottom, from(#b576f0), to(#e473f3));
@@ -54,11 +54,11 @@ body .header-accueil .logo .fa-shopping-cart {
   -webkit-text-fill-color: transparent;
 }
 
-body .header-accueil .buttons {
+body header .buttons {
   padding: 20px;
 }
 
-body .header-accueil .buttons .btn {
+body header .buttons .btn {
   border: none;
   width: 100px;
   padding: 10px;
@@ -70,7 +70,7 @@ body .header-accueil .buttons .btn {
   color: #a8802a;
 }
 
-body .header-accueil .buttons .btn:hover {
+body header .buttons .btn:hover {
   cursor: pointer;
   color: #76c9f0;
 }
@@ -92,7 +92,6 @@ body .main {
 body .main .intro {
   padding: 50px 0px;
   background-color: rgba(248, 244, 223, 0.5);
-  margin: 50px;
   text-align: center;
   font-family: 'Merienda One', cursive;
   line-height: 50px;
@@ -115,38 +114,32 @@ body .main .all-products {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .main .all-products .product {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+body .main .all-products .product {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 20px;
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 340px;
   /* height: 450px; */
   /* background-color: rgb(241, 209, 104); */
   background-color: rgba(248, 244, 223, 0.5);
-  margin: 50px;
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 5px #a8802a;
           box-shadow: 5px 5px 5px #a8802a;
@@ -158,7 +151,9 @@ body .main .all-products .product img {
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 220px;
+  height: 260px;
+  padding: 20px;
+  border-radius: 10px 0px 0px 10px;
   /* border: 2px solid rgb(168, 128, 42); */
 }
 
@@ -169,6 +164,8 @@ body .main .all-products .product img :hover {
 }
 
 body .main .all-products .product .product-details {
+  width: 2000px;
+  height: 220px;
   color: #a8802a;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,17 +174,15 @@ body .main .all-products .product .product-details {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: beige;
-  width: 294px;
   margin: 20px;
-  padding: 10px;
+  padding: 20px;
   /* font-style: oblique; */
   line-height: 30px;
   /* border: 2px solid rgb(168, 128, 42); */
-  border-radius: 10px 0px 10px 0px;
+  border-radius: 0px 10px 10px 0px;
   border: #a8802a;
 }
 
@@ -202,10 +197,13 @@ body .main .all-products .product .product-details .product-title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: 'Merienda One', cursive;
+  font-size: 50px;
 }
 
 body .main .all-products .product .product-details .product-price {
   font-weight: bold;
+  font-size: 35px;
 }
 
 body .main .all-products .product .product-details .fa-paw {
@@ -404,5 +402,47 @@ body h2, body h3 {
 
 .body-basket {
   background-image: url(../images/fond-rainbow-degrade-page3.png);
+}
+
+.body-basket #panier {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body-basket #panier table {
+  margin: 20px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.body-basket #panier td, .body-basket #panier th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.body-basket #panier tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.body-basket input:invalid {
+  -webkit-box-shadow: 0 0 5px 1px red;
+          box-shadow: 0 0 5px 1px red;
+}
+
+.body-basket input:valid {
+  border: 1px solid black;
 }
 /*# sourceMappingURL=styles.css.map */

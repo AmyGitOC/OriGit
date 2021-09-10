@@ -1,10 +1,12 @@
+import urlApi from "./urlApi.js"
+import * as myLibrary from "./library.js";
 let teddies = [];
 
 async function getTeddiesFromAPI() {
-    const url = 'http://localhost:3000/api/teddies';
+    const url = urlApi + '/api/teddies';
     try { // inutile
         const response = await axios.get(url); // La requête
-        console.log("la requette axios a http://localhost:3000/api/teddies nous renvoie response et response.data qui est egale à :>>", response.data) // console.log
+        console.log("la requette axios a " + urlApi + "/api/teddies nous renvoie response et response.data qui est egale à :>>", response.data) // console.log
         teddies = response.data; // remplissage de la variable, on lui attribue la valeur response.data (data qui est un attribut de l'objet. Attribut qui contient les les paires clé/valeur)
     } catch (error) {
         console.log("ATTENTION ERR API LANCER LE SERVER SVP")
@@ -23,7 +25,7 @@ function fillProducts() {
                             </a> 
                             <div class="product-details">
                                 <div class="product-title">${teddies[i].name}<i class="fas fa-paw"></i></div>
-                                <div class="product-price">${teddies[i].price}</div>
+                                <div class="product-price">${myLibrary.priceConvert(teddies[i].price)}</div>
                                <a href="HTML/page-produit.html?id_product=${teddies[i]._id}">
                                     <button type="button" class="button" >En savoir plus</button>
                                 </a>
@@ -37,9 +39,7 @@ function fillProducts() {
 
 async function main() {
     await getTeddiesFromAPI();
-    fillProducts();
-
-
+    fillProducts(); 
 }
 
 main();

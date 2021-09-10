@@ -5,7 +5,7 @@ body {
     background-size: cover;
     margin: 0px;
 
-    .header-accueil {
+    header{
         text-decoration: none;
         display: flex;
         flex-direction: row;
@@ -63,7 +63,6 @@ body {
         .intro {
             padding: 50px 0px;
             background-color: rgba(248, 244, 223, 0.5);
-            margin: 50px;
             text-align: center;
             font-family: 'Merienda One', cursive;
             line-height: 50px;
@@ -80,21 +79,21 @@ body {
         }
         .all-products {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
+            flex-direction: column;
+            // align-items: center;
             .product {
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                padding-top: 20px;
+                padding: 20px;
+                margin: 50px;
+                // min-width: 600px;
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 justify-content: flex-start;
                 align-items: center;
-                width: 340px;
+                
                 /* height: 450px; */
                 /* background-color: rgb(241, 209, 104); */
                 background-color: rgba(248, 244, 223, 0.5);
-                margin: 50px;
                 border-radius: 10px;
                 box-shadow: 5px 5px 5px rgb(168, 128, 42);
                 /* border: 2px solid rgb(168, 128, 42); */
@@ -103,7 +102,10 @@ body {
                     width: 300px;
                     border-radius: 10px;
                     object-fit: cover;
-                    height: 220px;
+                    height: 260px;
+                    // margin: 20px;
+                    padding: 20px;
+                    border-radius: 10px 0px 0px 10px;
                     /* border: 2px solid rgb(168, 128, 42); */
                     :hover {
                     /* cursor: url(https://fontawesome.com/v5.15/icons/paw?style=solid), default; */
@@ -112,26 +114,31 @@ body {
             }
     
             .product-details {
+                width: 2000px;
+                height: 220px;
                 color: rgb(168, 128, 42);
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: space-around;
                 background-color: beige;
-                width: 294px;
+                // width: 294px;
                 margin: 20px;
-                padding: 10px;
+                padding: 20px;
                 /* font-style: oblique; */
                 line-height: 30px;
                 /* border: 2px solid rgb(168, 128, 42); */
-                border-radius: 10px 0px 10px 0px;
+                border-radius: 0px 10px 10px 0px;
                 border: rgb(168, 128, 42);
                 .product-title {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
+                    font-family: 'Merienda One', cursive;
+                    font-size: 50px;
                 }
                 .product-price {
                     font-weight: bold;
+                    font-size: 35px;
                 }
                 .fa-paw {
                     font-size: 30px;
@@ -318,4 +325,33 @@ body {
 
 .body-basket {
     background-image: url(../images/fond-rainbow-degrade-page3.png);
+    #panier {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        table {
+            margin: 20px;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+        }
+          
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+          
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    }
+    input:invalid {
+        box-shadow: 0 0 5px 1px red;
+      }
+      
+      input:valid {
+        border: 1px solid black;
+      }
 }

@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         
-        <title>Détails du produit</title>
+        <title>Panier</title>
 
         <meta charset="utf-8">
         <meta name="description" content=""> 
@@ -21,7 +21,7 @@
 
     <body class="body body-basket">
         <!-- HEADER -->
-        <header class="header header-product">
+        <header>
             <a href="../index.html"><div class="logo"><i class="fas fa-shopping-cart"></i><h1>Orinours</h1></div></a>
                 <div class="buttons">
                 <button onclick="idrecup()" class="btn">Accueil</button>
@@ -31,28 +31,61 @@
             <!-- <img class="logo" src="images/Logo-Orinoco.png" alt="Le logo de notre enseigne Orinoco" /> -->
         </header>
     
-    
-    
         <!--MAIN-->
-        <main></main>
+        <main>
+            <div id="panier">
+                <!-- <div class="PanierOneProduct"> 
+                    <div class="panierNomOneProduct">Arnold</div>
+                    <div class="PanierQuantiteOneProduct">Quantité: 1</div> 
+                </div>  -->
+                <table id="tablePanier">
+                    <h2>Mon panier</h2>
+                    <tr>
+                        <th><i>Article</i></th>
+                        <th><i>Quantité</i></th>
+                        <th><i>Prix</i></th>
+                    </tr>
+                    <tr>
+                        <td><b>Total</b></td>
+                        <td><b>0</b></td>
+                        <td><b>0€</b></td>
+                    </tr>
+                </table>
+                    
+                    
+                    
+            </div>
+
+
+            <div><p>Merci de renseigner tous les champs pour valider votre commande</p></div>
+            <form id="leForm">
+                <div><input id="leNom" type="text" placeholder="Nom" required /></div>
+                <div><input id="lePrenom" type="text" placeholder="Prénom" required /></div>
+                <div><input id="lAdresse" type="text" placeholder="Adresse" required /></div>
+                <div><input id="laVille" type="text" placeholder="Ville" required /></div>
+                <div><input id="lEmail" type="email" placeholder="Email" required /></div>
+            </form>
+            <button onclick="sendOrder()" class="order">Passer la commander</button>
+            <button onClick="deleteAll()" class="vider" >Vider le panier</button>
+        </main>
     
-            <!--FOOTER-->
-            <footer class="footer">
-                <div class="bloc-footer">
-                    <h3>Contactez-nous</h3>
-                    <label for="customerName" class="customerName">Votre nom</label>
-                    <input class="inputCustomerName" type="text">
-                    <label for="custumerEmail" class="customerEmail">Votre email</label>
-                    <input class="inputCustomerEmail" type="text">
-                    <label for="customerMessage" class="customerMessage">Votre message</label>
-                    <textarea name="customerMessage" id="customerMessage" cols="30" rows="3"></textarea>
-                </div>
-                <div class="bloc-footer">
-                    <div class="logo"><i class="fas fa-shopping-cart"></i><h3>Orinours</h3></div>
-                </div>
-            </footer>
+        <!--FOOTER-->
+        <footer>
+            <div class="bloc-footer">
+                <h3>Contactez-nous</h3>
+                <label for="customerName" class="customerName">Votre nom</label>
+                <input class="inputCustomerName" type="text">
+                <label for="custumerEmail" class="customerEmail">Votre email</label>
+                <input class="inputCustomerEmail" type="text">
+                <label for="customerMessage" class="customerMessage">Votre message</label>
+                <textarea name="customerMessage" id="customerMessage" cols="30" rows="3"></textarea>
+            </div>
+            <div class="bloc-footer">
+                <div class="logo"><i class="fas fa-shopping-cart"></i><h3>Orinours</h3></div>
+            </div>
+        </footer>
         
-            <script src="JS/index.js"></script>
+        <script type="module" src="../JS/page-panier.js"></script>
     </body>
-    </html>
+</html>
     
